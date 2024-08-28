@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Market Community</title>
+  <link rel="stylesheet" href="static/styles/style.css">
+  <link rel="icon" type="image/x-icon" href="static/media/Logo FMC Transparent.png">
+
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav.css') }}> -->
+  
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    {% include "navbar.html" %}
+  </header>
+
+  <div class="hero-banner">
+    <h1 class="fmc-text">
+      Financial<br>
+      Market<br>
+      Community
+    </h1>
+    <h2 class="fmc-text feb-unpad-text">
+      Fakultas Ekonomi dan Bisnis<br>
+      Universitas Padjadjaran
+    </h2>
+    <div class="button">
+      <button>
+        Research
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="22.22"
+          height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M5 12l14 0" />
+          <path d="M13 18l6 -6" />
+          <path d="M13 6l6 6" />
+        </svg>
+      </button>
+      <button class="event-button">
+        Event
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="22.22"
+          height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M5 12l14 0" />
+          <path d="M13 18l6 -6" />
+          <path d="M13 6l6 6" />
+        </svg>
+      </button>
+  </div>
+  </div>
+
+  <!-- About Us -->
+  <div class="about-us">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <div class="left">
+      <div class="about-text">
+        <p>
+          <b>Financial Market Community</b> atau FMC adalah sebuah <span
+            class="highlight">organisasi dibawah pengawasan Bursa Efek Indonesia (BEI) secara langsung.</span>
+          FMC didirikan pada 15 Juli 2003 dan berkedudukan di Fakultas Ekonomi dan Bisnis Universitas Padjadjaran<br><br>
+  
+          FMC adalah tempat untuk seluruh anggotanya bertumbuh serta meningkatkan kemampuan berorganisasi dan pengetahuan
+          pasar modal dengan seluruh program kerja yang ada. Misi FMC adalah untuk menyediakan lingkungan yang kondusif bagi para anggotanya untuk mengembangkan kemampuan mereka, berbagi pengetahuan, dan membangun jaringan dengan para profesional di industri.
+
+          
+        </p>
+
+
+        <button>
+          Read more
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="22.22"
+            height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 12l14 0" />
+            <path d="M13 18l6 -6" />
+            <path d="M13 6l6 6" />
+          </svg>
+        </button>
+      </div>
+      </div>  
+      <div class="right">
+      <div class="about-image">
+        <img src="static/media/Home/homepage landscape.webp" alt="Gambar About Us">
+      </div>
+      </div>  
+    </div>
+  </div>
+
+  <!-- <div class="testimoni">
+    <h2 class="header-testimoni"">DENGAR APA KATA MEREKA</h2>
+  </div> -->
+
+  <!-- Pengurus -->
+  
+<div class="pengurus">
+  <h2 class="header-pengurus">Pengurus FMC Universitas Padjadjaran</h2>
+  
+  <div class="content-pengurus">
+
+    <div class="pengurus-image">
+      <img src="./static/media/Home/gambar about1.webp" alt="Pengurus FMC">
+    </div>
+  
+    <div class="pengurus-info">
+      <p>Kami memiliki tim profesional dengan jumlah 94 pengurus yang bersama-sama membantu civitas akademika
+        Universitas Padjadjaran dan masyarakat umum untuk berinvestasi.
+      </p>
+      <div class="division-buttons">
+        <div class="divisions">
+          <button>Deputy Secretary</button>
+          <button>Deputy Treasury</button>
+          <button>Business Partnership</button>
+          <button>Research</button>
+          <button>Sharia Research</button>
+          <button>Education</button>
+        </div>
+        <div class="divisions">
+          <button>Technological Literation & Advancement</button>
+          <button>Projects & Events</button>
+          <button>Digital Media & Visual</button>
+          <button>Public Relation</button>
+          <button>Internal Relation</button>
+          <button>Talent Acquisition & Management</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<footer>
+  {% include "footer.html" %}
+</footer>
+
+</html>

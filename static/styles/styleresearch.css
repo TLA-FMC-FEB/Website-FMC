@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  /* border: 2px solid red; */
+}
+
+/* reset user agent margin (from browser) */
+body {
+  margin: 0px;
+}
+
+/* navbar adjustment */
+/* #no-padding {
+  padding: 0px;
+}
+
+.bg-body-tertiary {
+  background-color: rgb(255 255 255) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+  margin-left: 2em;
+  width: 100px;
+  height: auto;
+}
+
+.nav-item {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+} */
+
+/* carousel */
+
+.carousel {
+  margin-top: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.carousel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel-info h1 {
+  background: linear-gradient(90deg, #012B9D 0%, #2EA7E0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel-info a{
+  color:black;
+}
+
+.carousel-info {
+  height: 540px;
+}
+
+.slide {
+  display:none;
+}
+
+.slide[data-active]{
+  display:flex;
+  gap:3em;
+}
+
+.slide img {
+  align-self:flex-start;
+  width: 40%;
+  height: auto;
+}
+
+.slide a {
+  display:contents;
+}
+
+.carousel-info {
+  /* text-align:justify; */
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel-info p {
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap:8em;
+  position: relative;
+  bottom:0;
+}
+
+.carousel-button {
+  width:56px;
+  height:56px;
+}
+
+.carousel-button {
+  background: none;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.carousel-button:hover{
+  background-color: #dedede;
+}
+
+/* news list*/
+.news-list {
+  margin: 2em 2em 0px 2em;
+}
+
+.section {
+  border-top: 2px solid black;
+  /* padding-top: 1em; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 2px;
+  border: 1px solid black;
+  border-radius: 60px;
+  width: 7em;
+  height: 2em;
+  background-color: transparent;
+}
+
+.header button:hover {
+  background-color: lightgray;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header svg{
+  width: 32px;
+  height: 32px;
+}
+
+.header .button-text {
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  gap: 1em;
+  max-width: 100%;
+}
+
+.content a {
+  color:black;
+  text-decoration:none;
+}
+
+.item p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width:1024px) {
+  .slide[data-active] {
+    gap:1em;
+  }
+
+  .slide h1 {
+    font-size: 1.5rem;
+  }
+  
+  .remove {
+    display:none;
+  }
+
+  .carousel-info{
+    height: 366px;
+  }
+}
+
+@media (max-width:750px) {
+  .slide[data-active]{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+    height: 700px;
+  }
+
+  .carousel ul {
+    height: 980px;
+  }
+
+  .slide img {
+    width: auto;
+  }
+
+  .carousel {
+    margin-top:4em;
+    height: 950px;
+  }
+  
+  .news-list {
+    margin-top: 16px;
+  }
+  .slide.carousel-info {
+    height: 300px;
+  }
+  .buttons {
+    position: absolute;
+    bottom: 16px;
+    align-self: center;
+  }
+  .header button {
+    width: 8em;
+    height: 2em;
+  }
+  .header .button-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width:500px) {
+  .carousel ul {
+    height: 500px;
+  }
+  .carousel-info {
+    height: 250px;
+  }
+  .mobile {
+    display:none;
+  }
+  .carousel {
+    height:750px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 4em;
+  }
+  .slide {
+    height: 400px;
+  }
+  .news-list {
+    margin: 1em 1em 0 1em;
+  }
+  .header button {
+    width: 7em;
+    height: 2em;
+  }
+  .header .button-text {
+    font-size: 1em;
+  }
+  .content p {
+    font-size: 10px;
+  }
+  .content {
+    gap: 0.5em
+  }
+}
+/* .Footerteks{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5 fr;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  } */
