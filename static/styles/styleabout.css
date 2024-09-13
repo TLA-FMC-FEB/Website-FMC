@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -22,13 +22,12 @@ body {
 }
 
 .hbanner {
-  background: linear-gradient(270deg, #000000 1.5%, #02112E 30%);
+  background: linear-gradient(270deg, #000000 1.5%, #02112e 30%);
   position: relative;
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
-  width:bold;
- 
+  width: bold;
 }
 
 .bgAbout {
@@ -56,13 +55,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1em;
-    font-weight: 600; 
-    
+    font-weight: 600;
   }
-  
 }
-
-
 
 /*About*/
 .about-us h2 {
@@ -70,7 +65,7 @@ body {
   margin-left: 30px;
   font-size: 45px;
   font-weight: 800;
-  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,11 +79,11 @@ body {
   grid-gap: 50px 30px;
   flex: auto;
   gap: 16px;
-  padding-bottom:3%;
+  padding-bottom: 3%;
 }
 
-.about-content .left{
-  display:flex;
+.about-content .left {
+  display: flex;
   align-items: center;
 }
 
@@ -96,8 +91,8 @@ body {
   padding-right: 20px;
 }
 
-.about-content .left p{
-  margin-top:20px;
+.about-content .left p {
+  margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
   padding-bottom: 15px;
@@ -105,63 +100,58 @@ body {
   text-align: justify;
 }
 
-.about-content .right .about-image img{
+.about-content .right .about-image img {
   height: auto;
   width: 80%;
   margin-left: 5%;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
-
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .about-content .left .about-text {
     padding-right: 0;
-    padding-bottom: -90px
+    padding-bottom: -90px;
   }
-  .about-content .right .about-image{
-    display:flex;
+  .about-content .right .about-image {
+    display: flex;
     justify-content: center;
   }
-  .about-content .right .about-image img{
+  .about-content .right .about-image img {
     height: auto;
     width: 80%;
     margin-left: 0%;
   }
-
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .about-content {
     width: 100%;
     grid-template-columns: 1fr;
   }
 }
 
-
-
 .highlight {
   color: #01359d;
   font-family: "Plus Jakarta Sans";
-  font-size: 17px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 35px;
 }
 
-
 /*Visi Misi*/
-.visi h2{
+.visi h2 {
   text-align: left;
   margin-right: 30px;
 }
-.misi h2{
+.misi h2 {
   text-align: right;
   margin-right: 30px;
 }
 
 .visi h2,
 .misi h2 {
-  color:white;
+  color: white;
   margin-top: 18px;
   margin-left: 30px;
   font-size: 45px;
@@ -170,23 +160,20 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: white;
   text-shadow: 0px 4px 4px rgb(255, 255, 255, 0.25);
-  
 }
 
-.teksvisi, 
+.teksvisi,
 .teksmisi {
   display: flex;
   gap: 10px;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
-
 
 .hbannervisimisi button {
   /*margin: 5px;*/
   gap: 10px;
-  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
   color: white;
   font-size: 17px;
   font-weight: 700;
@@ -200,8 +187,8 @@ body {
 }
 
 /* Values  */
-@media (min-width: 991px){
-  .hbannervisimisi{
+@media (min-width: 991px) {
+  .hbannervisimisi {
     height: 70vh;
     width: 100%;
     color: white;
@@ -219,7 +206,7 @@ body {
 
   .values {
     width: 100%;
-    height:80vh;
+    height: 80vh;
     color: white;
     background-image: url("/static/media/FEB.webp");
     background-repeat: no-repeat;
@@ -235,20 +222,19 @@ body {
     margin-bottom: 3rem;
   }
 
-  .values h2{
+  .values h2 {
     text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 54px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+    background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom : 24px;
+    margin-bottom: 24px;
   }
-
 
   .valuestext {
     font-family: "Plus Jakarta Sans";
@@ -259,11 +245,11 @@ body {
     font-weight: 400;
     text-align: justify;
     margin: 10px 150px;
-    }
+  }
 }
 
 @media screen and (max-width: 991px) {
-  .hbannervisimisi{
+  .hbannervisimisi {
     height: 100vh;
     width: 100%;
     color: white;
@@ -278,10 +264,10 @@ body {
     justify-content: center;
     text-align: center;
   }
-  
+
   .values {
-    width : 100%;
-    height:80vh;
+    width: 100%;
+    height: 80vh;
     margin-bottom: 20px;
     padding: 0;
     background-image: url("/static/media/FEB.webp");
@@ -300,7 +286,7 @@ body {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+    background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -318,7 +304,7 @@ body {
     text-align: justify;
     margin: 20px;
     margin-top: 10px;
-    }
+  }
 }
 
 /* Testimoni Alumni  */
@@ -326,12 +312,11 @@ body {
 /* TA-1 */
 .testimoni-alumni h2 {
   margin-top: 30px;
-  margin-left: 30px;
-  margin-bottom:50px;
+  margin-bottom: 50px;
   font-size: 50px;
   font-weight: 800;
-  text-align:center;
-  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  text-align: center;
+  background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -341,28 +326,25 @@ body {
 .testimoni-alumni h3 {
   margin-left: 30px;
   font-size: 39px;
-  margin-bottom:-25px;
+  margin-bottom: -25px;
   font-weight: 800;
-  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
 }
 
 .testimoni-alumni h4 {
   margin-top: 10px;
   margin-left: 30px;
   font-size: 20px;
-  font-weight: 600; 
-  background: linear-gradient(90deg,#012B9D 0%, #000F2D 50%);
+  font-weight: 600;
+  background: linear-gradient(90deg, #012b9d 0%, #000f2d 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
-
 
 .TA-content1 {
   width: 100%;
@@ -371,11 +353,11 @@ body {
   grid-gap: 50px 30px;
   flex: auto;
   gap: 16px;
-  padding-bottom:3%;
+  padding-bottom: 3%;
 }
 
-.TA-content1 .TA-left1{
-  display:flex;
+.TA-content1 .TA-left1 {
+  display: flex;
   align-items: center;
 }
 
@@ -383,8 +365,8 @@ body {
   padding-right: 20px;
 }
 
-.TA-content1 .TA-left1 p{
-  margin-top:20px;
+.TA-content1 .TA-left1 p {
+  margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
   padding-bottom: 15px;
@@ -392,27 +374,24 @@ body {
   text-align: justify;
 }
 
-.TA-content1 .TA-right1 .TA-image1 img{
+.TA-content1 .TA-right1 .TA-image1 img {
   height: auto;
   width: 80%;
   margin-left: 5%;
 }
 
-
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .TA-content1 .TA-left1 .TA-text1 {
     padding-right: 0;
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .TA-content1 {
     width: 100%;
     grid-template-columns: 1fr;
   }
 }
-
-
 
 .highlight {
   color: #01359d;
@@ -428,9 +407,9 @@ body {
 .TA-text2 h3 {
   margin-left: 30px;
   font-size: 39px;
-  margin-bottom:-25px;
+  margin-bottom: -25px;
   font-weight: 800;
-  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -442,13 +421,11 @@ body {
   margin-left: 30px;
   font-size: 20px;
   font-weight: 800; /*P? MASH DISINI G*/
-  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- 
 }
-
 
 .TA-content2 {
   width: 100%;
@@ -457,11 +434,11 @@ body {
   grid-gap: 50px 30px;
   flex: auto;
   gap: 16px;
-  padding-bottom:3%;
+  padding-bottom: 3%;
 }
 
-.TA-content2 .TA-left2{
-  display:flex;
+.TA-content2 .TA-left2 {
+  display: flex;
   align-items: center;
 }
 
@@ -469,8 +446,8 @@ body {
   padding-right: 20px;
 }
 
-.TA-content2 .TA-left2 p{
-  margin-top:20px;
+.TA-content2 .TA-left2 p {
+  margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
   padding-bottom: 15px;
@@ -478,20 +455,19 @@ body {
   text-align: justify;
 }
 
-.TA-content2 .TA-right2 .TA-image2 img{
+.TA-content2 .TA-right2 .TA-image2 img {
   height: auto;
   width: 80%;
   margin-left: 5%;
 }
 
-
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .TA-content2 .TA-left2 .TA-text2 {
     padding-right: 0;
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .TA-content2 {
     width: 100%;
     grid-template-columns: 1fr;
