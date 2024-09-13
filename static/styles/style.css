@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -43,10 +43,10 @@ body {
     background-size: cover;
   }
 }
-  
+
 @media (max-width: 991px) {
   .hero-banner .fmc-text {
-    color: #FFF;
+    color: #fff;
     font-family: "Plus Jakarta Sans";
     font-size: 7rem;
     font-weight: 800;
@@ -55,7 +55,7 @@ body {
     margin-left: 20px;
   }
   .hero-banner .feb-unpad-text {
-    color: #FFF;
+    color: #fff;
     font-size: 2rem;
     font-style: normal;
     font-weight: 800;
@@ -64,7 +64,7 @@ body {
     padding: 1em 16px;
   }
   .hero-banner .button {
-    position:absolute;
+    position: absolute;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -76,7 +76,7 @@ body {
 
 @media (min-width: 991px) {
   .hero-banner .fmc-text {
-    color: #FFF;
+    color: #fff;
     font-family: "Plus Jakarta Sans";
     font-size: 8rem;
     font-style: normal;
@@ -85,17 +85,16 @@ body {
     padding: 3rem 0rem 0rem 1rem;
   }
   .hero-banner .feb-unpad-text {
-    color: #FFF;
+    color: #fff;
     font-size: 28px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     margin-top: -20px;
     padding: 10px 20px;
- 
   }
   .hero-banner .button {
-    position:absolute;
+    position: absolute;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -142,24 +141,24 @@ body {
   }
 }
 
-@media (min-width:900px) and (max-height: 675px) {
-  .hero-banner  .fmc-text {
+@media (min-width: 900px) and (max-height: 675px) {
+  .hero-banner .fmc-text {
     font-size: 6rem;
     line-height: 6rem;
   }
   .hero-banner .feb-unpad-text {
-    margin-top:0.2em;
+    margin-top: 0.2em;
     font-size: 2rem;
     line-height: 2rem;
   }
   .hero-banner .button {
-    bottom:3rem;
+    bottom: 3rem;
   }
 }
 
 .hero-banner .button .event-button {
   background: none;
-  color: #FFF;
+  color: #fff;
   border-radius: 6px;
   border: 1px solid #fff;
   stroke: #fff;
@@ -167,7 +166,7 @@ body {
 
 .hero-banner .button .event-button:hover {
   color: #ffffff;
-  background: #012B9D;
+  background: #012b9d;
   stroke: #ffffff;
   border: none;
 }
@@ -177,7 +176,7 @@ body {
   height: 47px;
   border-radius: 6px;
   border: none;
-  background: #FFF;
+  background: #fff;
   color: #060606;
   font-family: Plus Jakarta Sans;
   font-size: 17px;
@@ -193,7 +192,7 @@ body {
 
 .hero-banner button:hover {
   color: #ffffff;
-  background: #012B9D;
+  background: #012b9d;
   stroke: #ffffff;
 }
 
@@ -207,7 +206,7 @@ body {
   margin-left: 30px;
   font-size: 50px;
   font-weight: 800;
-  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -225,16 +224,16 @@ body {
   padding-right: 20px;
 }
 
-.about-content .left p{
-  margin-top:20px;
+.about-content .left p {
+  margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
   padding-bottom: 15px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
 }
 
-.about-content .right .about-image img{
+.about-content .right .about-image img {
   height: 100%;
   width: 100%;
 }
@@ -248,19 +247,17 @@ body {
   text-decoration: none;
 }
 
-
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .about-content .left .about-text {
     padding-right: 0;
-    
   }
 }
 
-@media (max-width: 768px){
-  .about-us h2{
+@media (max-width: 768px) {
+  .about-us h2 {
     font-size: 30px;
   }
-   
+
   .about-content {
     width: 100%;
     grid-template-columns: 1fr;
@@ -272,13 +269,11 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
   }
-  .about-content .right .about-image img{
+  .about-content .right .about-image img {
     height: 100%;
     width: 90%;
   }
 }
-
-
 
 .highlight {
   color: #01359d;
@@ -288,7 +283,6 @@ body {
   font-weight: 700;
   line-height: 35px;
 }
-
 
 .about-us button {
   /*button*/
@@ -309,7 +303,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: color 0.3s ease;
-  stroke:#ffffff;
+  stroke: #ffffff;
 }
 
 .about-us button:hover {
@@ -326,32 +320,31 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
 
-.content-pengurus{
+.content-pengurus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .pengurus h2 {
-  font-size: 30px;}
-  .content-pengurus{
+    font-size: 30px;
+  }
+  .content-pengurus {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     flex-direction: column;
   }
-  .pengurus-image{
+  .pengurus-image {
     width: 50%;
     align-self: center;
     align-content: space-between;
@@ -359,7 +352,7 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
   }
-  .pengurus-image img{
+  .pengurus-image img {
     height: auto;
     width: 170%;
     align-self: center;
@@ -375,25 +368,25 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    align-content: center;}
-
+    align-content: center;
+  }
 }
 
-@media (min-width: 991px){
-.pengurus-image{
-  width: 30%;
+@media (min-width: 991px) {
+  .pengurus-image {
+    width: 30%;
   }
-  .pengurus-image img{
+  .pengurus-image img {
     max-width: 100%;
   }
-  .pengurus-info{
+  .pengurus-info {
     width: 60%;
     text-align: justify;
     margin-left: 30px;
   }
 }
 
-.pengurus-info p{
+.pengurus-info p {
   font-size: 18px;
 }
 
@@ -413,7 +406,7 @@ body {
 .pengurus-info button {
   margin: 5px;
   gap: 10px;
-  background: linear-gradient(90deg, #000F2D 0%, #012B9D 100%);
+  background: linear-gradient(90deg, #000f2d 0%, #012b9d 100%);
   color: white;
   font-size: 12px;
   font-weight: 700;
