@@ -11,6 +11,12 @@ body {
 }
 
 
+
+.tile a{
+  text-decoration:none;
+  color: white;
+}
+
 .content a{
   text-decoration:none;
   color:black
@@ -89,8 +95,7 @@ body {
     flex-wrap: wrap; }
   .acordion{
     width: 25%;
-    margin-left: -50px;
-    
+        
     }
   .content {
     width: 70%;
@@ -350,6 +355,12 @@ footer ul {
   padding: 10px;
 }
 
+
+.row__inner {
+  width: auto !important; /* Bootstrap kadang-kadang menetapkan 100%, ini akan menimpanya */
+  max-width: none !important ;
+}
+
 /* Hover effects */
 .row__inner:hover {
   transform: translate3d(-62.5px, 0, 0); /* -(250px * (1.5 - 1) / 2) */
@@ -367,3 +378,4 @@ footer ul {
 .tile:hover ~ .tile {
   transform: translate3d(125px, 0, 0); /* 250px * (1.5 - 1) */
 }
+
