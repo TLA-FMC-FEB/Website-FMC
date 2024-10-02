@@ -7,7 +7,6 @@
   <title>Financial Market Community</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="static/script/coba-embed.js"></script>
   <link rel="stylesheet" href="static/styles/stylelearn.css">
   <link rel="stylesheet" href="static/styles/coba-coba.css">
   <link rel="icon" type="image/x-icon" href="static/media/Logo FMC Transparent.png" />
@@ -22,56 +21,161 @@
   --bs-gutter-y: 0rem;">
   <div class="acordion">
     <div class="accordion accordion-flush" id="accordionFlushExample" style="--bs-body-bg: #000F2D; --bs-accordion-color: #ffffff;">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="--bs-accordion-btn-color: #ffffff;">
-              Introductions
+        
+      <!-- Fixed!! 
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="--bs-accordion-btn-color: #ffffff;">
+           Introduction
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> 
+            <ul class="coba">
+              <li><a href="#" onclick="showIntroduction()">Kenapa Saham Ada?</a></li>
+              <li><a href="">Hal-hal yang mempengaruhi pasar modal</a></li>
+            </ul>
+            <code></code></div>
+        </div>
+      </div>
+      -->
+ <!-- General Knowledge Section -->  
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSaham" aria-expanded="false" aria-controls="flush-collapseSaham" style="--bs-accordion-btn-color: #ffffff;">
+                General Knowledge
             </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        </h2>
+        <div id="flush-collapseSaham" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
-              <ul class="coba">
-                <li><a href="#" onclick="showIntroduction()">Pengertian Pasar Modal</a></li>
-                <li><a href="">Hal-hal yang mempengaruhi pasar modal</a></li>
-              </ul>
+                <ul class="coba">
+                    <li>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#listSaham1" aria-expanded="false" aria-controls="listSaham1">
+                            Cara Saham Bekerja
+                        </button>
+                        <div class="collapse" id="listSaham1">
+                            <ul>
+                              <li><a href="#" onclick="showVideo('konsepipo')">Konsep IPO</a></li>
+                              <li><a href="#" onclick="showVideo('pasarmodal')">Pengantar Pasar Modal</a></li>
+                              <li><a href="#" onclick="showVideo('fungsisaham')">Fungsi Saham</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#listSaham2" aria-expanded="false" aria-controls="listSaham2">
+                            Industri dan Sektor
+                        </button>
+                        <div class="collapse" id="listSaham2">
+                            <ul>
+                                <li>Tingkat Klasifikasi</li>
+                                <li>Sektor dan Industri Perusahaan Tercatat di BEI</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#listSaham3" aria-expanded="false" aria-controls="listSaham3">
+                            Capital Gain dan Dividend
+                        </button>
+                        <div class="collapse" id="listSaham3">
+                            <ul>
+                                <li>Keuntungan dan Resiko yang Ada dalam Saham</li>
+                                <li>Istilah Penting Terkait Dividen</li>
+                                <li>Konsep Saham 'Gorengan' dan Dividend Trap</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#listSaham4" aria-expanded="false" aria-controls="listSaham4">
+                            Reksadana dan Obligasi
+                        </button>
+                        <div class="collapse" id="listSaham4">
+                            <ul>
+                                <li>Konsep dan Jenis Obligasi</li>
+                                <li>Konsep dan Jenis Reksadana</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#listSaham5" aria-expanded="false" aria-controls="listSaham5">
+                            Skill Assets Management
+                        </button>
+                        <div class="collapse" id="listSaham5">
+                            <ul>
+                                <li>Konsep dan Prinsip Assets Management</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="--bs-accordion-btn-color: #ffffff;">
-              Fungsi
+    </div>
+    
+    <!-- Basic Analysis Section -->    
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAnalysis" aria-expanded="false" aria-controls="flush-collapseAnalysis" style="--bs-accordion-btn-color: #ffffff;">
+                Basic Analysis
             </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"> 
-              <ul class="coba">
-                <li><a href="#" onclick="showIntroduction()">Pengertian Pasar Modal</a></li>
-                <li><a href="">Hal-hal yang mempengaruhi pasar modal</a></li>
-              </ul>
-              <code></code></div>
-
-          </div>
+        </h2>
+        <div id="flush-collapseAnalysis" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul class="coba">
+                    <li>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#listAnalysis1" aria-expanded="false" aria-controls="listAnalysis1">
+                            Basic Ratio
+                        </button>
+                        <div class="collapse" id="listAnalysis1">
+                            <ul>
+                                <li>Profitability Ratio</li>
+                                <li>Liquidity Ratio</li>
+                                <li>Solvency Ratio</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#listAnalysis2" aria-expanded="false" aria-controls="listAnalysis2">
+                            Annual Report dan Bacanya
+                        </button>
+                        <div class="collapse" id="listAnalysis2">
+                            <ul>
+                                <li>Komponen Laporan Tahunan</li>
+                                <li>Cara Membaca Laporan Keuangan</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#listAnalysis3" aria-expanded="false" aria-controls="listAnalysis3">
+                            Beta, Marketcap, Marketshare
+                        </button>
+                        <div class="collapse" id="listAnalysis3">
+                            <ul>
+                                <li>Beta Saham</li>
+                                <li>Market Capitalization</li>
+                                <li>Market Share</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#listAnalysis4" aria-expanded="false" aria-controls="listAnalysis4">
+                            Mean PER PBV Band Valuation
+                        </button>
+                        <div class="collapse" id="listAnalysis4">
+                            <ul>
+                                <li>Price to Book Value (PBV)</li>
+                                <li>Valuasi Mean Band</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="--bs-accordion-btn-color: #ffffff;">
-              Hasil
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"> 
-              <ul class="coba">
-                <li><a href="#" onclick="showIntroduction()">Pengertian Pasar Modal</a></li>
-                <li><a href="">Hal-hal yang mempengaruhi pasar modal</a></li>
-              </ul>
-              <code></code></div>
-          </div>
-        </div>
+    </div>
+    
+      <!-- Other Analysis Section -->    
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" style="--bs-accordion-btn-color: #ffffff;">
-              Market
+              Other Analysis
             </button>
           </h2>
           <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -114,114 +218,154 @@
   </div>
   
   
-   <div class="content" id="course-content">
+  <div class="content" id="course-content">
         <h3>Apa Pentingnya Belajar Pasar Modal?</h3>
         <p>
             Pasar modal mempunyai manfaat bagi issuer. Di antaranya dapat memotong biaya intermediasi keuangan dibandingkan bila mereka mengambil kredit dari perbankan. "Pasar modal juga menyediakan sumber pendanaan jangka panjang bagi dunia usaha sekaligus memungkinkan alokasi sumber dana secara optimal," ujarnya.
         </p>
-    </div>
-    </div>
+  </div>
+
 <div class="judulb">
     <h2>Course Highlights</h2>
 </div>
 
+<!-- Carousel Youtube Section -->  
   <div class="karosel">
     <div class="contain">
        <div class="row" style="--bs-gutter-y: 3.5rem; --bs-gutter-x: 0rem; margin-top:0.3%;">
         <div class="row__inner">
 
+        <!-- Fixed!! -->
           <div class="tile">
+           <a href="https://www.youtube.com/watch?v=fpLwzsZPx5A" target="_blank">
             <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg" alt=""  />
+              <img class="tile__img" src="https://i.ytimg.com/vi/fpLwzsZPx5A/hqdefault.jpg" alt=""  />
             </div>
             <div class="tile__details">
               <div class="tile__title">
-                Top Gear
+                Play Video
               </div>
             </div>
+           </a>
           </div>
-
+       
+       
           <div class="tile">
+           <a href="https://www.youtube.com/watch?v=4sP-PC8O6SI" target="_blank">
             <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-2.jpg" alt=""  />
+              <img class="tile__img" src="https://i.ytimg.com/vi/4sP-PC8O6SI/hqdefault.jpg" alt=""  />
             </div>
             <div class="tile__details">
               <div class="tile__title">
-                Top Gear
+                Play Video
               </div>
             </div>
+           </a>
           </div>
-
+       
+        
+      
           <div class="tile">
+            <a href="https://www.youtube.com/watch?v=VP6VbXMDRWU" target="_blank">
             <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
+              <img class="tile__img" src="https://i.ytimg.com/vi/VP6VbXMDRWU/hqdefault.jpg" alt=""  />
             </div>
             <div class="tile__details">
               <div class="tile__title">
-                Top Gear
+                Play Video
               </div>
             </div>
+           </a>
           </div>
+       
 
+       
           <div class="tile">
+            <a href="https://www.youtube.com/watch?v=nyrNeW9HJTQ" target="_blank">
             <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-2.jpg" alt=""  />
+              <img class="tile__img" src="https://i.ytimg.com/vi/nyrNeW9HJTQ/hqdefault.jpg" alt=""  />
             </div>
             <div class="tile__details">
               <div class="tile__title">
-                Top Gear
+                Play Video
               </div>
             </div>
+            </a>
           </div>
-
-
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg" alt=""  />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-2.jpg" alt=""  />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-2.jpg" alt=""  />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
+        
 
       
-          
+          <div class="tile">
+            <a href="https://www.youtube.com/watch?v=DPrsKsivvJc" target="_blank">
+            <div class="tile__media">
+              <img class="tile__img" src="https://i.ytimg.com/vi/DPrsKsivvJc/hqdefault.jpg" alt=""  />
+            </div>
+            <div class="tile__details">
+              <div class="tile__title">
+                Play Video
+              </div>
+            </div>
+            </a>
+          </div>
+       
+
+        
+          <div class="tile">
+            <a href="https://www.youtube.com/watch?v=89O-3hW8e8o" target="_blank">
+            <div class="tile__media">
+              <img class="tile__img" src="https://i.ytimg.com/vi/89O-3hW8e8o/hqdefault.jpg" alt=""  />
+            </div>
+            <div class="tile__details">
+              <div class="tile__title">
+                Play Video
+              </div>
+            </div>
+           </a>
+          </div>
+        
+        
+          <div class="tile">
+            <a href="https://www.youtube.com/watch?v=OjqmDv4wc-8" target="_blank">
+            <div class="tile__media">
+              <img class="tile__img" src="https://i.ytimg.com/vi/OjqmDv4wc-8/hqdefault.jpg" alt=""  />
+            </div>
+            <div class="tile__details">
+              <div class="tile__title"> 
+                Play Video
+              </div>
+            </div>
+          </a>
+          </div>
+   
+
+      
+          <div class="tile">
+            <a href="https://www.youtube.com/watch?v=NO5mPjiMC7U" target="_blank">
+            <div class="tile__media">
+              <img class="tile__img" src="https://i.ytimg.com/vi/NO5mPjiMC7U/hqdefault.jpg" alt=""  />
+            </div>
+            <div class="tile__details">
+              <div class="tile__title">
+                Play Video
+              </div>
+            </div>
+          </a>
+          </div>
+        
+
+         
+          <div class="tile">
+            <a href="https://www.youtube.com/watch?v=Q1Tg0Nb00hQ" target="_blank">
+            <div class="tile__media">
+              <img class="tile__img" src="https://i.ytimg.com/vi/Q1Tg0Nb00hQ/hqdefault.jpg" alt=""  />
+            </div>
+            <div class="tile__details">
+              <div class="tile__title">
+                Play Video
+              </div>
+            </div>
+          </a>
+          </div>        
         </div>
       </div>
       
@@ -231,61 +375,17 @@
     
  </div>
  
-  <div id="video-section" style="display: none; margin-top: 20px; visibility:hidden;">
-    <div class="video-container">
-      <lite-youtube videoid="ogfYd705cRs" style="background-image: url('https://i.ytimg.com/vi/ogfYd705cRs/hqdefault.jpg');">
-        <a href="https://youtube.com/watch?v=ogfYd705cRs" class="lty-playbtn" title="Play Video">
-          <span class="lyt-visually-hidden">Play Video: Keynote (Google I/O '18')</span>
-        </a>
-      </lite-youtube>
-    </div>
+ <div id="video-section" style="display: none; margin-top: 20px; visibility: hidden;">
+  <div id="course-content">
+      <!-- Konten video dinamis akan dimasukkan di sini -->
   </div>
+</div>
     <footer>{% include "footer.html"%}</footer>
    </div>
-<script src="coba-embed.js"></script>
+   <script src="static/script/lite-youtube-embed.js"></script>
+   <script src="static\script\showVideo.js"></script>
   
 </body>
 </html>
 
 
-<!-- <div class="karosel"> 
-
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="static/media/article-image.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="static/media/article-image.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="static/media/article-image.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
- </div>-->
