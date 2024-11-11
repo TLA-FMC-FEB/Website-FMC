@@ -15,10 +15,13 @@ def about():
 # def events():
 #     return render_template("events.html")
 
+<<<<<<< Updated upstream
 # @app.route('/bbri-lakukan-buyback')
 # def bbri_lakukan_buyback():
 #     return render_template("bbri-lakukan-buyback.html")
 
+=======
+>>>>>>> Stashed changes
 @app.route('/learn')
 def learn():
     return render_template("learn.html")
