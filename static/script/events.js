@@ -23,14 +23,14 @@ function changeToFGTS() {
 
 function changeToFMCCollaboration() {
   displayNone(content);
-  image.setAttribute("src", "static/media/Event/FMC COLLABORATION.webp");
+  image.setAttribute("src", "static/media/Event/FMC_COLLABORATION.webp");
   fmcCollaborationContent.setAttribute("style", "display:block");
   // image.setAttribute("style", "@media (max-width: 1000px) {width: 85vw}");
 }
 
 function changeToShasaPeka() {
   displayNone(content);
-  image.setAttribute("src", "static/media/Event/SHASHA PEKA.webp");
+  image.setAttribute("src", "static/media/Event/SHASHA_PEKA.webp");
   shasaPekaContent.setAttribute("style", "display:block");
   // image.setAttribute("style", "@media (max-width: 1000px) {width: 80vw}");
 }
