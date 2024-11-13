@@ -27,7 +27,7 @@ for (i = 0; i < subAcc.length; i++) {
 }
 
 function openNav() {
-  document.getElementById("SideNavID").style.width = "@media (max-width:430px) {100vw} @media (min-width:430px) {400px}";
+  document.getElementById("SideNavID").style.width = "400px";
 }
 
 function closeNav() {
