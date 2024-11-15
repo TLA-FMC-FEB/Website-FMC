@@ -19,6 +19,12 @@ def events():
 def learn():
     return render_template("learn.html")
 
+@app.route('/coolify')
+def coolify():
+    return """
+    <h1>Tambahan page dari coolify</h1>
+    <h2>Hello World from Coolify!</h2>
+    """
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=5000)
