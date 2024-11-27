@@ -50,6 +50,8 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 1px 2px 1px rgba(146, 139, 139, 0.25);
+  
 }
 
 .carousel-info a{
