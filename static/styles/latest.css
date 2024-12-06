@@ -38,7 +38,7 @@ img {
 .items {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: 0.2em;
 }
 
 .itemContainerCenter{
@@ -54,18 +54,24 @@ img {
 
 @media (max-width: 500px){
   .item {
-  max-width: calc((100%/3) - 0.35em);
+  max-width: calc((100%/3) - 0.133em);
   }
   .item p {
     font-size: 0.7rem;
+  }
+  #container {
+    margin: 3em 0.5em 0 0.5em;
   }
 }
 
 @media (min-width: 500px) {
   .item {
-    max-width: calc((100%/4) - 0.38em);
+    max-width: calc((100%/4) - 0.54em);
   }
   .item{
     font-size: 0.7rem;
+  }
+  .items {
+    gap: 0.5em;
   }
 }
