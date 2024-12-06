@@ -10,27 +10,6 @@ body {
   margin: 0px;
 }
 
-/* navbar adjustment */
-/* #no-padding {
-  padding: 0px;
-}
-
-.bg-body-tertiary {
-  background-color: rgb(255 255 255) !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.logo img{
-  margin-left: 2em;
-  width: 100px;
-  height: auto;
-}
-
-.nav-item {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 700;
-} */
-
 /* carousel */
 
 .carousel {
@@ -267,7 +246,7 @@ img {
     height: 400px;
   }
   .news-list {
-    margin: 1em 1em 0 1em;
+    margin: 1em 0.5em 0 0.5em;
   }
   .header button {
     width: 7em;
@@ -280,7 +259,7 @@ img {
     font-size: 10px;
   }
   .content {
-    gap: 0.5em
+    gap: 0.2em
   }
 }
 /* .Footerteks{
