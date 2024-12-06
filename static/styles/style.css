@@ -13,6 +13,26 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+.hero-banner button {
+  stroke:#000000;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  border-radius:6px;
+  margin-top: 8em;
+  font-weight: bold;
+}
+
+.hero-banner button:hover {
+  color: #ffffff;
+  background: #012b9d;
+  stroke: #ffffff;
+}
+
+.hero-banner button p {
+  margin: 0;
+}
+
 @media (max-width: 991px) {
   .hero-banner {
     height: 100vh;
@@ -28,6 +48,9 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
+  }
+  .buttons {
+    width: 100%; 
   }
 }
 
@@ -63,15 +86,6 @@ body {
     margin-top: -20px;
     padding: 1em 16px;
   }
-  .hero-banner .button {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 5rem;
-  }
 }
 
 @media (min-width: 991px) {
@@ -93,15 +107,6 @@ body {
     margin-top: -20px;
     padding: 10px 20px;
   }
-  .hero-banner .button {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 6rem;
-  }
 }
 
 @media (max-width: 700px) {
@@ -114,16 +119,11 @@ body {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
-  .hero-banner .button {
-    position: static;
-    transform: none;
-    margin: 0 auto;
-  }
 }
 
 @media (max-width: 430px) {
   .hero-banner {
-    height: 40vh;
+    height: 50vh;
   }
   .hero-banner .fmc-text {
     font-size: 3rem;
@@ -132,6 +132,9 @@ body {
   .hero-banner .feb-unpad-text {
     font-size: 1rem;
     line-height: 1rem;
+  }
+  .hero-banner button{
+    margin-top: 1.5em;
   }
 }
 
@@ -151,53 +154,6 @@ body {
     font-size: 2rem;
     line-height: 2rem;
   }
-  .hero-banner .button {
-    bottom: 3rem;
-  }
-}
-
-.hero-banner .button .event-button {
-  background: none;
-  color: #fff;
-  border-radius: 6px;
-  border: 1px solid #fff;
-  stroke: #fff;
-}
-
-.hero-banner .button .event-button:hover {
-  color: #ffffff;
-  background: #012b9d;
-  stroke: #ffffff;
-  border: none;
-}
-
-.hero-banner button {
-  width: 110px;
-  height: 47px;
-  border-radius: 6px;
-  border: none;
-  background: #fff;
-  color: #060606;
-  font-family: Plus Jakarta Sans;
-  font-size: 17px;
-  font-weight: 500;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  stroke: #000;
-}
-
-.hero-banner button:hover {
-  color: #ffffff;
-  background: #012b9d;
-  stroke: #ffffff;
-}
-
-.hero-banner button p {
-  margin: 0;
 }
 /*About-us*/
 
