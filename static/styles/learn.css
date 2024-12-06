@@ -99,7 +99,7 @@
 
 .subpanel button {
     margin-left: 1em;
-    width: 100%;
+    width: 90%;
     border: 0;
     border-left: 2px solid #dddddd ;
     text-align: left;
@@ -153,7 +153,6 @@
     width: 24px;
     height: 24px;
     transition: 0.25s;
-    margin-right: 1em;
 }
 
 .openNav {
