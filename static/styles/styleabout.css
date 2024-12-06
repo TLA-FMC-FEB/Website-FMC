@@ -46,7 +46,10 @@ body {
   transform: translate(-50%, -50%);
   font-size: 3em;
   font-weight: 800;
+  font-style: bold;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
+
 
 @media (max-width: 430px) {
   .hbanner .judul {
@@ -56,6 +59,8 @@ body {
     transform: translate(-50%, -50%);
     font-size: 1em;
     font-weight: 600;
+    
+    
   }
 }
 
@@ -267,12 +272,17 @@ body {
 
   .values {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     margin-bottom: 20px;
     padding: 0;
     background-image: url("/static/media/FEB.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .values .misi {
@@ -299,8 +309,8 @@ body {
     position: relative;
     gap: 10px;
     color: black;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 400px;
     text-align: justify;
     margin: 20px;
     margin-top: 10px;
@@ -396,11 +406,11 @@ body {
 .highlight {
   color: #01359d;
   font-family: "Plus Jakarta Sans";
-  font-size: 17px;
-  font-style: normal;
+  font-size: 18px;
+  font-style:normal;
   font-weight: 700;
-  line-height: 35px;
-}
+  line-height: 3px;
+  }
 
 /* TA-2  */
 

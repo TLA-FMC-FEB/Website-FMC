@@ -43,11 +43,8 @@ body {
     background-image: url("/static/media/Hero-Image-FMC.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-align: left;
+    
+
   }
   .buttons {
     width: 100%; 
@@ -64,6 +61,8 @@ body {
     background-image: url("/static/media/Hero-Image-FMC.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    
+
   }
 }
 
@@ -237,7 +236,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 35px;
+  line-height: 5px;
 }
 
 .about-us button {
