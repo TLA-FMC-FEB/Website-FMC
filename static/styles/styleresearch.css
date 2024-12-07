@@ -185,6 +185,9 @@ img {
   .carousel-info{
     height: 366px;
   }
+  .truncate {
+    display: none;
+  }
 }
 
 @media (max-width:750px) {
