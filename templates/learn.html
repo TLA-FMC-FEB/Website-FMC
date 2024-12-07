@@ -93,12 +93,86 @@
         </div>
       </div>
 
-      <button class="openNav" onclick="openNav()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="1.5"> <path d="M4 6l16 0"></path> <path d="M4 12l16 0"></path> <path d="M4 18l16 0"></path> </svg><h1>Course Content</h1></button>
+      <button class="openNav mobile" onclick="openNav()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="1.5"> <path d="M4 6l16 0"></path> <path d="M4 12l16 0"></path> <path d="M4 18l16 0"></path> </svg><h1>Course Content</h1></button>
       <!-- <div class="openNavBackground"></div> -->
+      <div class="desktop-flex">
+        <div class="accordion-section desktop">
+          <button class="accordion active">
+            <b>Apa itu Saham dan Kenapa menjadi Penting?</b>
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='m9 18 6-6-6-6'/></svg>
+          </button>
+          <div class="panel" style="max-height:1000px;">
+            <button class="sub-accordion">
+              Apa itu saham?
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='m9 18 6-6-6-6'/></svg>
+            </button>
+            <div class="subpanel">
+              <button onclick="showVideo('konsepIPO')">Konsep IPO</button>
+              <button onclick="showVideo('pasarModal')">Pasar Primer, Sekundar, dan Tersier</button>
+            </div>
+            <button class="sub-accordion">
+              Industri dan Sektor
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='m9 18 6-6-6-6'/></svg>
+            </button>
+            <div class="subpanel">
+              <button onclick="showVideo('klasifikasi')">4 Tingkat Klasifikasi</button>
+              <button onclick="showVideo('perusahaanTercatat')">Sektor dan Industri Perusahaan Tercatat di BEI</button>
+            </div>
+            <button class="sub-accordion">
+              Capital Gain dan Dividend
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='m9 18 6-6-6-6'/></svg>
+            </button>
+            <div class="subpanel">
+              <button onclick="showVideo('keuntunganResiko')">Keuntungan dan Resiko dalam Saham</button>
+              <button onclick="showVideo('istilah')">Istilah Penting Terkait Dividend</button>
+              <button onclick="showVideo('dividendTrap')">Konsep Saham 'Gorengan' dan Dividend Trap</button>
+            </div>
+            <button class="sub-accordion">
+              Reksadana dan Obligasi
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='m9 18 6-6-6-6'/></svg>
+            </button>
+            <div class="subpanel">
+              <button onclick="showVideo('obligasi')">Konsep Obligasi</button>
+              <button onclick="showVideo('jenisObligasi')">Jenis Obligasi</button>
+              <button onclick="showVideo('reksadana')">Jenis Reksadana</button>
+            </div>
+            <button class="sub-accordion">
+              Skill Assets Management
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='m9 18 6-6-6-6'/></svg>
+            </button>
+            <div class="subpanel">
+              <button onclick="showVideo('assetManagement')">Konsep dan Prinsip Assets Management</button>
+              <!-- <button>Tujuan dan Manfaat Asset Management</button> -->
+            </div>
+            <button class="sub-accordion">
+              Miskonsepsi Saham
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='m9 18 6-6-6-6'/></svg>
+            </button>
+            <div class="subpanel">
+              <button onclick="showVideo('orangKayaBeliSaham')">Miskonsepsi orang kaya = beli saham</button>
+              <!-- <button>Tujuan dan Manfaat Asset Management</button> -->
+            </div>
+          </div>
+          <button class="accordion active">
+            <b>Basic Analysis</b>
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='m9 18 6-6-6-6'/></svg>
+          </button>
+          <div class="panel" style="max-height:1000px;">
+            <button class="sub-accordion">
+              Basic Ratio
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='m9 18 6-6-6-6'/></svg>
+            </button>
+            <div class="subpanel">
+              <button onclick="showVideo('liquidity')">Liquidity Ratio</button>
+              <button onclick="showVideo('profitability')">Profitability Ratio</button>
+            </div>
+          </div>
+        </div>
 
-      <div class="right">
-        <lite-youtube videoid="fpLwzsZPx5A" playlabel="Konsep IPO"></lite-youtube>
-        <p class="learn-title">Konsep IPO</p>
+        <div class="right">
+          <lite-youtube  videoid="fpLwzsZPx5A" playlabel="Konsep IPO"></lite-youtube>
+          <p class="learn-title">Konsep IPO</p>
+        </div>
       </div>
       <h1 class="courseHighlightsTitle">Course Highlights</h1>
       <div class="carousel">

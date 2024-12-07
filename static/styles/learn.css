@@ -125,6 +125,7 @@
 .right{
     margin-left: 2em;
     margin-right: 2em;
+    width: 100%;
 }
 
 /* The side navigation menu */
@@ -354,4 +355,27 @@
         margin-left:0;
         margin-right:0;
     }
+    .desktop {
+      display: none;
+    }
+    lite-youtube {
+      margin-right: 2em;
+    }
+}
+
+
+@media (min-width:1024px) {
+  .desktop-flex{
+    display: flex;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop svg {
+    margin-right: 0;
+    width: 24px;
+  }
+  .desktop b {
+    width: 240px;
+  }
 }
