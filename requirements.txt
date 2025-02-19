@@ -1,3 +1,5 @@
-flask==3.1.0
-gunicorn==23.0.0
-granian==1.6.3
+quart==0.20.0
+Werkzeug==3.1.3
+hypercorn==0.17.3
+quart-rate-limiter==0.11.0
+granian==1.7.6

@@ -1,30 +1,42 @@
-from flask import Flask, render_template
+import granian
+from quart import Quart, render_template
+from quart_rate_limiter import RateLimiter, RateLimit
+from datetime import timedelta
 
-app = Flask(__name__)
+app = Quart(__name__)
+
+# Define multiple default limits
+default_limits = [
+    RateLimit(10, timedelta(seconds = 1)),    # 10 request per 1 second - changed from 5
+    RateLimit(150, timedelta(minutes = 1)),  # 150 requests per minute - changed from 120
+    RateLimit(1000, timedelta(hours = 1))    # 1000 requests per hour - no change
+]
+
+rate_limiter = RateLimiter(app, default_limits = default_limits)
 
 
 @app.route('/')
-def index():
-    return render_template("index.html")
+async def index():
+    return await render_template("index.html")
     
 @app.route('/about')
-def about():
-    return render_template("about-us.html")
+async def about():
+    return await render_template("about-us.html")
     
 @app.route('/events')
-def events():
-    return render_template("events.html")
+async def events():
+    return await render_template("events.html")
 
 @app.route('/learn')
-def learn():
-    return render_template("learn.html")
+async def learn():
+    return await render_template("learn.html")
 
 @app.route('/coolify')
-def coolify():
-    return """
+async def coolify():
+    return await """
     <h1>Tambahan page dari coolify</h1>
     <h2>Hello World from Coolify!</h2>
     """
 
-if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
