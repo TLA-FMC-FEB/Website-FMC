@@ -19,10 +19,6 @@ def events():
 def bbri_lakukan_buyback():
     return render_template("bbri-lakukan-buyback.html")
 
-# @app.route('/learn')
-# def learn():
-#     return render_template("learn.html")
-
 @app.route('/learn')
 def learn():
     return render_template("learn.html")
