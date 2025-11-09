@@ -390,6 +390,11 @@ nav ul li #learn:hover {
 
 /*pengurus*/
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 
 .pengurus h2 {
   margin-top: 80px;
