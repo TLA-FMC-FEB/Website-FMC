@@ -406,9 +406,15 @@ nav ul li #learn:hover {
   
 }
 
-.division-buttons .divisions a{
+/* .division-buttons .divisions a{
   text-decoration: none;
   color: white;
+} */
+
+.link-white {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .content-pengurus{
