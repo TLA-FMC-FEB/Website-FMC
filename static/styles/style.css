@@ -406,7 +406,7 @@ nav ul li #learn:hover {
   
 }
 
-a{
+.division-buttons .divisions a{
   text-decoration: none;
   color: white;
 }
