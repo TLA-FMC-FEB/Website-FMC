@@ -30,7 +30,7 @@ function changeToFMCCollaboration() {
 
 function changeToShasaPeka() {
   displayNone(content);
-  image.setAttribute("src", "static/media/Event/SHASHA PEKA.webp");
+  image.setAttribute("src", "static/media/Event/shapek.webp");
   shasaPekaContent.setAttribute("style", "display:block");
 }
 
