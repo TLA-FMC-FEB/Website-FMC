@@ -24,7 +24,7 @@ function changeToFGTS() {
 
 function changeToFMCCollaboration() {
   displayNone(content);
-  image.setAttribute("src", "static/media/Event/FMC COLLABORATION.webp");
+  image.setAttribute("src", "static/media/Event/Collab.webp");
   fmcCollaborationContent.setAttribute("style", "display:block");
 }
 
