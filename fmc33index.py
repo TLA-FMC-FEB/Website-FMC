@@ -35,7 +35,7 @@ get_weight_percentage()
 def get_po():
   all_shares_outstanding = {}
 
-for ticker_symbol in tickersList:
+  for ticker_symbol in toTickersList():
     ticker = yf.Ticker(ticker_symbol)
     ticker_info = ticker.info
     
