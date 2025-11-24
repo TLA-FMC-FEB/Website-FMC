@@ -6,7 +6,9 @@ import pandas as pd
 tickersList = ['BRPT', 'ANTM', 'INCO', 'SCMA', 'MNCN', 'ERAA', 'CPIN', 'ICBP', 'INDF', 'BYAN', 'ADRO', 'AKRA', 'BBCA', 'BMRI', 'BBRI', 'SIDO', 'KLBF', 'MIKA', 'ASII', 'UNTR', 'ARNA', 'TLKM', 'EXCL', 'TBIG', 'PWON', 'CTRA', 'BSDE', 'EMTK', 'MTDL', 'MLPT', 'TMAS', 'SMDR', 'ASSA']
 weight_percentage = []
 marketCapList = []
+base_year = []
 stocks_data = None
+all_shares_outstanding = {}
 
 def tickersPercentage():
   for i in range(0, len(weight_percentage)):
@@ -33,8 +35,6 @@ def get_weight_percentage():
 get_weight_percentage()
 
 def get_po():
-  all_shares_outstanding = {}
-
   for ticker_symbol in toTickersList():
     ticker = yf.Ticker(ticker_symbol)
     ticker_info = ticker.info
@@ -43,7 +43,7 @@ def get_po():
     
     if shares_outstanding is not None:
         all_shares_outstanding[ticker_symbol] = shares_outstanding
-
+get_po()
 def get_fmc33index_data():
   global stocks_data
   stocks_data = yf.download(toTickersList(), start='2025-01-03', end='2025-11-07', progress=False)
@@ -60,6 +60,10 @@ def get_base_price(date='2025-01-03'):
     get_fmc33index_data()
   base_price = stocks_data.loc[date, ('Close', toTickersList())]
   return base_price
+
+def get_base_year():
+  for i in range(0, len(weight_percentage) - 1):
+    base_year.append(get_base_price().iloc[i] * all_shares_outstanding[toTickersList()[i]])
 
 def get_fmc33index_info():
   fmc33_largestMarketCap = max(marketCapList)
@@ -79,7 +83,3 @@ def get_fmc33index_info():
   fmc33_weightTop10Constituent = sum(sorted(weight_percentage, reverse=True)[0:9])
   
   return fmc33_largestMarketCap, fmc33_smallestMarketCap, fmc33_meanMarketCap, fmc33_medianMarketCap, fmc33_LargestConstituent, fmc33_SmallestConstituent, fmc33_weightLargestConstituent, fmc33_weightTop10Constituent
-
-for i in range(0, len(weight_percentage) - 1):
-  print(get_base_price().iloc[i])
-  
